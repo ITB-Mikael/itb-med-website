@@ -98,7 +98,7 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-18">
           <Link to="/" className="flex items-center gap-3" aria-label="ITB-MED Home">
-            <img src="/logo.png" alt="ITB-MED logo" className="h-9" />
+            <img src="/logo.png" alt="ITB-MED logo" className="h-9 brightness-[10] saturate-0 invert-0" style={{filter: 'brightness(0) invert(1)'}} />
           </Link>
 
           {/* Desktop nav */}
