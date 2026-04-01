@@ -34,8 +34,8 @@ export default function Pipeline() {
           </div>
           <div className="hidden lg:block">
             <img
-              src="/images/microscope.jpg"
-              alt="Researcher using a microscope in a laboratory setting"
+              src="/images/pipeline-hero.jpg"
+              alt="Fluorescence microscopy of cells"
               className="w-full h-72 object-cover rounded-2xl shadow-lg"
               loading="lazy"
             />

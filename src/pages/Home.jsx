@@ -200,10 +200,10 @@ export default function Home() {
             </p>
           </div>
         </ScrollFadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <ScrollFadeIn delay={0}>
             <div className="group relative rounded-2xl overflow-hidden aspect-[4/3]">
-              <img src="/images/surgery.jpg" alt="Surgical team performing a transplant procedure" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <img src="/images/surgery.jpg" alt="Researchers analyzing transplant data" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-white font-serif text-lg">Transplantation</p>
@@ -217,11 +217,21 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-white font-serif text-lg">Neurology</p>
-                <p className="text-navy-200 text-sm mt-1">ALS & hidradenitis suppurativa</p>
+                <p className="text-navy-200 text-sm mt-1">ALS</p>
               </div>
             </div>
           </ScrollFadeIn>
           <ScrollFadeIn delay={200}>
+            <div className="group relative rounded-2xl overflow-hidden aspect-[4/3]">
+              <img src="/images/inflammatory.jpg" alt="Biotech laboratory research for inflammatory conditions" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="text-white font-serif text-lg">Inflammatory</p>
+                <p className="text-navy-200 text-sm mt-1">Hidradenitis suppurativa</p>
+              </div>
+            </div>
+          </ScrollFadeIn>
+          <ScrollFadeIn delay={300}>
             <div className="group relative rounded-2xl overflow-hidden aspect-[4/3]">
               <img src="/images/cells.jpg" alt="Microscopic view of immune cells" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
