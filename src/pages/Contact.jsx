@@ -19,14 +19,14 @@ export default function Contact() {
 
   return (
     <>
-      <section className="bg-white">
+      <section className="bg-dark-bg">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-28">
           <div className="max-w-3xl animate-blur-fade-in mb-16">
-            <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">Get in Touch</p>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-navy-900 mb-6">
+            <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Get in Touch</p>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-white mb-6">
               Contact us
             </h1>
-            <p className="text-lg text-navy-600 leading-relaxed">
+            <p className="text-lg text-navy-300 leading-relaxed">
               We welcome inquiries about our clinical programs, partnership opportunities, and general information.
             </p>
           </div>
@@ -39,17 +39,17 @@ export default function Contact() {
 
             {/* Offices */}
             <div className="lg:col-span-2 space-y-8">
-              <div className="rounded-2xl border border-navy-100/60 overflow-hidden">
+              <div className="rounded-2xl border border-navy-700/30 bg-navy-900/50 overflow-hidden">
                 <div className="relative h-32 overflow-hidden">
                   <img src="/images/forskaren.jpg" alt="ITB-MED Stockholm office building" className="w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-950/30 to-transparent" />
-                  <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-1">
+                  <div className="absolute top-3 right-3 bg-navy-800/90 backdrop-blur-sm rounded-full p-1">
                     <MapPin className="w-3.5 h-3.5 text-accent-500" />
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-serif text-lg text-navy-900 mb-2">Stockholm</h3>
-                  <address className="not-italic text-sm text-navy-600 leading-relaxed">
+                  <h3 className="font-serif text-lg text-white mb-2">Stockholm</h3>
+                  <address className="not-italic text-sm text-navy-300 leading-relaxed">
                     ITB-MED AB<br />
                     Hagaplan 4<br />
                     113 68 Stockholm, Sweden
@@ -58,17 +58,17 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-navy-100/60 overflow-hidden">
+              <div className="rounded-2xl border border-navy-700/30 bg-navy-900/50 overflow-hidden">
                 <div className="relative h-32 overflow-hidden">
                   <img src="/images/newyork.jpg" alt="Manhattan skyline near ITB-MED New York office" className="w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-950/30 to-transparent" />
-                  <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-1">
+                  <div className="absolute top-3 right-3 bg-navy-800/90 backdrop-blur-sm rounded-full p-1">
                     <MapPin className="w-3.5 h-3.5 text-accent-500" />
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-serif text-lg text-navy-900 mb-2">New York</h3>
-                  <address className="not-italic text-sm text-navy-600 leading-relaxed">
+                  <h3 className="font-serif text-lg text-white mb-2">New York</h3>
+                  <address className="not-italic text-sm text-navy-300 leading-relaxed">
                     ITB-MED LLC<br />
                     110 East 59th St FL 28<br />
                     New York, NY 10022

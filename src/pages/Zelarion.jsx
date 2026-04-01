@@ -21,14 +21,14 @@ export default function Zelarion() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white overflow-hidden">
+      <section className="bg-dark-bg overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-blur-fade-in">
-            <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">Zelarion Group</p>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-navy-900 mb-6">
+            <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Zelarion Group</p>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-white mb-6">
               The parent organization behind ITB-MED
             </h1>
-            <p className="text-lg text-navy-600 leading-relaxed">
+            <p className="text-lg text-navy-300 leading-relaxed">
               Zelarion Group is the owner of TCD601 (siplizumab) and ITB-MED. The group is dedicated to developing TCD601 for transplantation and autoimmune diseases, with Orphan Drug Designation granted in both the United States and the European Union.
             </p>
           </div>
@@ -44,31 +44,31 @@ export default function Zelarion() {
       </section>
 
       {/* Key Facts */}
-      <SectionWrapper bg="light">
+      <SectionWrapper bg="dark">
         <ScrollFadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-white border border-navy-100/60 text-center">
-              <h3 className="font-serif text-xl text-navy-900 mb-2">TCD601 Owner</h3>
-              <p className="text-navy-500 text-sm leading-relaxed">Zelarion holds worldwide rights to TCD601 (siplizumab)</p>
+            <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 text-center">
+              <h3 className="font-serif text-xl text-white mb-2">TCD601 Owner</h3>
+              <p className="text-navy-400 text-sm leading-relaxed">Zelarion holds worldwide rights to TCD601 (siplizumab)</p>
             </div>
-            <div className="p-8 rounded-2xl bg-white border border-navy-100/60 text-center">
-              <h3 className="font-serif text-xl text-navy-900 mb-2">Orphan Drug (US)</h3>
-              <p className="text-navy-500 text-sm leading-relaxed">FDA Orphan Drug Designation for transplant tolerance<Ref id={1} /></p>
+            <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 text-center">
+              <h3 className="font-serif text-xl text-white mb-2">Orphan Drug (US)</h3>
+              <p className="text-navy-400 text-sm leading-relaxed">FDA Orphan Drug Designation for transplant tolerance<Ref id={1} /></p>
             </div>
-            <div className="p-8 rounded-2xl bg-white border border-navy-100/60 text-center">
-              <h3 className="font-serif text-xl text-navy-900 mb-2">Orphan Drug (EU)</h3>
-              <p className="text-navy-500 text-sm leading-relaxed">EMA Orphan Drug Designation in the European Union<Ref id={2} /></p>
+            <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 text-center">
+              <h3 className="font-serif text-xl text-white mb-2">Orphan Drug (EU)</h3>
+              <p className="text-navy-400 text-sm leading-relaxed">EMA Orphan Drug Designation in the European Union<Ref id={2} /></p>
             </div>
           </div>
         </ScrollFadeIn>
       </SectionWrapper>
 
       {/* Board */}
-      <SectionWrapper bg="white">
+      <SectionWrapper bg="dark">
         <div className="text-center mb-16">
           <ScrollFadeIn>
-            <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">Leadership</p>
-            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-navy-900">
+            <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Leadership</p>
+            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white">
               Board of Directors
             </h2>
           </ScrollFadeIn>

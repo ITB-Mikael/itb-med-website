@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-950 text-navy-300">
+    <footer className="bg-dark-bg text-navy-300">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-navy-800/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-16 pt-8 border-t border-navy-800/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-navy-500">
             &copy; {new Date().getFullYear()} ITB-MED AB. All rights reserved.
           </p>

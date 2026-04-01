@@ -5,7 +5,7 @@ export const pipelineData = [
     rows: [
       { indication: 'Kidney Induction Transplant', startCol: 0, endCol: 2, label: '' },
       { indication: 'ALS', startCol: 0, endCol: 2, label: '' },
-      { indication: 'Hidradenitis Suppurativa¹', startCol: 1, endCol: 1, label: '' },
+      { indication: 'Hidradenitis Suppurativa¹', startCol: 0, endCol: 1, label: '' },
       { indication: 'Xenotransplantation²', startCol: 0, endCol: 0, label: 'Decedent' },
     ],
   },

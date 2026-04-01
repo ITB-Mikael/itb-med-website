@@ -38,19 +38,19 @@ export default function Header() {
         <div className="fixed inset-0 z-[60] lg:hidden">
           {/* Backdrop */}
           <div
-            className="absolute inset-0 bg-navy-950/50 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setMobileOpen(false)}
           />
           {/* Sidebar */}
           <nav
-            className="absolute right-0 top-0 bottom-0 w-72 bg-white shadow-2xl animate-slide-in-right"
+            className="absolute right-0 top-0 bottom-0 w-72 bg-dark-elevated shadow-2xl animate-slide-in-right border-l border-navy-800/50"
             aria-label="Mobile navigation"
           >
             {/* Close button */}
             <div className="flex justify-end p-5">
               <button
                 onClick={() => setMobileOpen(false)}
-                className="p-2 text-navy-700"
+                className="p-2 text-navy-300"
                 aria-label="Close menu"
               >
                 <X className="w-6 h-6" />
@@ -64,7 +64,7 @@ export default function Header() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium text-navy-700 hover:text-accent-600 transition-colors"
+                    className="text-lg font-medium text-navy-200 hover:text-accent-400 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -74,8 +74,8 @@ export default function Header() {
                     to={link.to}
                     className={`text-lg font-medium transition-colors ${
                       location.pathname === link.to
-                        ? 'text-accent-600'
-                        : 'text-navy-700 hover:text-accent-600'
+                        ? 'text-accent-400'
+                        : 'text-navy-200 hover:text-accent-400'
                     }`}
                   >
                     {link.label}
@@ -92,8 +92,8 @@ export default function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b transition-all duration-300 ${
-          scrolled ? 'border-navy-100/60 shadow-sm' : 'border-transparent'
+        className={`sticky top-0 z-50 backdrop-blur-sm border-b transition-all duration-300 ${
+          scrolled ? 'bg-dark-bg/90 border-navy-800/50 shadow-lg shadow-black/20' : 'bg-transparent border-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-18">
@@ -110,7 +110,7 @@ export default function Header() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-medium text-navy-600 hover:text-accent-600 transition-colors duration-200"
+                  className="text-sm font-medium text-navy-300 hover:text-white transition-colors duration-200"
                 >
                   {link.label}
                 </a>
@@ -120,8 +120,8 @@ export default function Header() {
                   to={link.to}
                   className={`text-sm font-medium transition-colors duration-200 ${
                     location.pathname === link.to
-                      ? 'text-accent-600'
-                      : 'text-navy-600 hover:text-accent-600'
+                      ? 'text-accent-400'
+                      : 'text-navy-300 hover:text-white'
                   }`}
                 >
                   {link.label}
@@ -132,7 +132,7 @@ export default function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 -mr-2 text-navy-700"
+            className="lg:hidden p-2 -mr-2 text-navy-200"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}

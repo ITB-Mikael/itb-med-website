@@ -8,9 +8,9 @@ export function Ref({ id }) {
 
 export function References({ items }) {
   return (
-    <div className="mt-16 pt-8 border-t border-navy-200/60">
+    <div className="mt-16 pt-8 border-t border-navy-700/30">
       <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-navy-400 mb-4">References & Sources</h4>
-      <ol className="space-y-2 text-xs text-navy-500 leading-relaxed list-decimal pl-5">
+      <ol className="space-y-2 text-xs text-navy-400 leading-relaxed list-decimal pl-5">
         {items.map((item, i) => (
           <li key={i} id={`ref-${i + 1}`}>{item}</li>
         ))}

@@ -13,6 +13,10 @@
   --color-navy-900: #122d46;
   --color-navy-950: #0d2137;
 
+  --color-dark-bg: #080f1a;
+  --color-dark-surface: #0a1525;
+  --color-dark-elevated: #0f1d30;
+
   --color-accent-50: #EFF6FF;
   --color-accent-100: #DBEAFE;
   --color-accent-200: #BFDBFE;
@@ -29,13 +33,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: light;
-    background-color: white;
+    color-scheme: dark;
+    background-color: var(--color-dark-bg);
   }
 
   body {
     font-family: var(--font-sans);
-    color: var(--color-navy-900);
+    color: var(--color-navy-200);
+    background-color: var(--color-dark-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

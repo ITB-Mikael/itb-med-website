@@ -21,14 +21,14 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white overflow-hidden">
+      <section className="bg-dark-bg overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-blur-fade-in">
-            <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">About ITB-MED</p>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-navy-900 mb-6">
+            <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">About ITB-MED</p>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-white mb-6">
               Redefining transplant medicine through targeted immunology
             </h1>
-            <p className="text-lg text-navy-600 leading-relaxed">
+            <p className="text-lg text-navy-300 leading-relaxed">
               ITB-MED is a biopharmaceutical company developing TCD601 (siplizumab) — a first-in-class anti-CD2 monoclonal antibody — for transplantation and autoimmune diseases. Through worldwide clinical trials and preclinical research, we are working to achieve a future where transplant recipients can live free of immunosuppression.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function About() {
       <SectionWrapper bg="light">
         <ScrollFadeIn>
           <div className="max-w-3xl mx-auto text-center">
-            <blockquote className="font-serif text-2xl md:text-3xl italic text-navy-800 leading-relaxed">
+            <blockquote className="font-serif text-2xl md:text-3xl italic text-navy-100 leading-relaxed">
               "Our mission is to develop therapies that enable transplant tolerance — freeing patients from the burden and risks of lifelong immunosuppression."
             </blockquote>
           </div>
@@ -58,33 +58,33 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <ScrollFadeIn>
             <div>
-              <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">Strategic Partnership</p>
-              <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-navy-900 mb-6">
+              <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Strategic Partnership</p>
+              <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white mb-6">
                 ITB-MED & Nefro Avillion
               </h2>
-              <p className="text-navy-600 leading-relaxed mb-4">
+              <p className="text-navy-300 leading-relaxed mb-4">
                 ITB-MED serves as the drug sponsor and biotech company advancing TCD601 across multiple therapeutic areas. Nefro Avillion Clinical Development (NACD), established in 2025, is a sister company that executes the kidney transplant tolerance clinical program.
               </p>
-              <p className="text-navy-600 leading-relaxed">
+              <p className="text-navy-300 leading-relaxed">
                 This partnership model enables focused execution: ITB-MED maintains oversight of the broader TCD601 program across transplant, autoimmunity, and neurology, while NACD drives the kidney tolerance trials to pivotal readiness.
               </p>
             </div>
           </ScrollFadeIn>
           <ScrollFadeIn delay={200}>
             <div className="grid grid-cols-1 gap-6">
-              <div className="p-8 rounded-2xl bg-navy-50 border border-navy-100/60">
+              <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30">
                 <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                  <Building2 className="w-6 h-6 text-accent-600" />
+                  <Building2 className="w-6 h-6 text-accent-400" />
                 </div>
-                <h3 className="font-serif text-xl text-navy-900 mb-2">ITB-MED</h3>
-                <p className="text-navy-600 text-sm leading-relaxed">Drug sponsor driving TCD601 development across transplantation, autoimmunity, and neurology.</p>
+                <h3 className="font-serif text-xl text-white mb-2">ITB-MED</h3>
+                <p className="text-navy-300 text-sm leading-relaxed">Drug sponsor driving TCD601 development across transplantation, autoimmunity, and neurology.</p>
               </div>
-              <div className="p-8 rounded-2xl bg-navy-50 border border-navy-100/60">
+              <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30">
                 <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                  <Globe className="w-6 h-6 text-accent-600" />
+                  <Globe className="w-6 h-6 text-accent-400" />
                 </div>
-                <h3 className="font-serif text-xl text-navy-900 mb-2">Nefro Avillion</h3>
-                <p className="text-navy-600 text-sm leading-relaxed">Clinical development partner executing the kidney transplant tolerance program.</p>
+                <h3 className="font-serif text-xl text-white mb-2">Nefro Avillion</h3>
+                <p className="text-navy-300 text-sm leading-relaxed">Clinical development partner executing the kidney transplant tolerance program.</p>
               </div>
             </div>
           </ScrollFadeIn>
@@ -95,8 +95,8 @@ export default function About() {
       <SectionWrapper bg="light">
         <div className="text-center mb-16">
           <ScrollFadeIn>
-            <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">Our Journey</p>
-            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-navy-900">
+            <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Our Journey</p>
+            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white">
               Development History
             </h2>
           </ScrollFadeIn>
@@ -108,13 +108,13 @@ export default function About() {
       <SectionWrapper bg="white">
         <ScrollFadeIn>
           <div className="text-center mb-12">
-            <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">Global Presence</p>
-            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-navy-900">Our Offices</h2>
+            <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Global Presence</p>
+            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white">Our Offices</h2>
           </div>
         </ScrollFadeIn>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           <ScrollFadeIn delay={100}>
-            <div className="rounded-2xl border border-navy-100/60 overflow-hidden">
+            <div className="rounded-2xl border border-navy-700/30 overflow-hidden">
               <div className="relative w-full h-48 overflow-hidden">
                 <img src="/images/forskaren.jpg" alt="Modern glass office building in Stockholm, home of ITB-MED" className="w-full h-full object-cover" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 to-transparent" />
@@ -123,8 +123,8 @@ export default function About() {
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="font-serif text-xl text-navy-900 mb-2">Stockholm</h3>
-                <p className="text-navy-500 text-sm leading-relaxed">
+                <h3 className="font-serif text-xl text-white mb-2">Stockholm</h3>
+                <p className="text-navy-400 text-sm leading-relaxed">
                   ITB-MED AB<br />
                   Hagaplan 4<br />
                   113 68 Stockholm, Sweden
@@ -134,7 +134,7 @@ export default function About() {
             </div>
           </ScrollFadeIn>
           <ScrollFadeIn delay={200}>
-            <div className="rounded-2xl border border-navy-100/60 overflow-hidden">
+            <div className="rounded-2xl border border-navy-700/30 overflow-hidden">
               <div className="relative w-full h-48 overflow-hidden">
                 <img src="/images/newyork.jpg" alt="Manhattan skyline, location of ITB-MED's New York office" className="w-full h-full object-cover" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 to-transparent" />
@@ -143,8 +143,8 @@ export default function About() {
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="font-serif text-xl text-navy-900 mb-2">New York</h3>
-                <p className="text-navy-500 text-sm leading-relaxed">
+                <h3 className="font-serif text-xl text-white mb-2">New York</h3>
+                <p className="text-navy-400 text-sm leading-relaxed">
                   ITB-MED LLC<br />
                   110 East 59th St FL 28<br />
                   New York, NY 10022

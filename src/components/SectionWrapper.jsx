@@ -1,7 +1,8 @@
 const bgVariants = {
-  white: 'bg-white',
-  dark: 'bg-navy-950 text-white',
-  light: 'bg-navy-50',
+  white: 'bg-dark-surface',
+  dark: 'bg-navy-950',
+  light: 'bg-dark-bg',
+  elevated: 'bg-dark-elevated',
 }
 
 export default function SectionWrapper({ children, bg = 'white', className = '', id }) {
