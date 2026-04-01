@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { createPortal } from 'react-dom'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
@@ -32,66 +33,30 @@ export default function Header() {
     return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
 
-  return (
-    <header
-      className={`sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b transition-all duration-300 ${
-        scrolled ? 'border-navy-100/60 shadow-sm' : 'border-transparent'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-18">
-        <Link to="/" className="flex items-center gap-3" aria-label="ITB-MED Home">
-          <img src="/logo.png" alt="ITB-MED logo" className="h-9" />
-        </Link>
-
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
-          {navLinks.map((link) =>
-            link.external ? (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-navy-600 hover:text-accent-600 transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            ) : (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === link.to
-                    ? 'text-accent-600'
-                    : 'text-navy-600 hover:text-accent-600'
-                }`}
-              >
-                {link.label}
-              </Link>
-            )
-          )}
-        </nav>
-
-        {/* Mobile hamburger */}
-        <button
-          className="lg:hidden p-2 -mr-2 text-navy-700"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={mobileOpen}
-        >
-          {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
-
-      {/* Mobile overlay */}
-      {mobileOpen && (
-        <div className="fixed inset-0 top-18 z-40 lg:hidden">
-          <div className="absolute inset-0 bg-navy-950/50 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
+  const mobileNav = mobileOpen
+    ? createPortal(
+        <div className="fixed inset-0 z-[60] lg:hidden">
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-navy-950/50 backdrop-blur-sm"
+            onClick={() => setMobileOpen(false)}
+          />
+          {/* Sidebar */}
           <nav
             className="absolute right-0 top-0 bottom-0 w-72 bg-white shadow-2xl animate-slide-in-right"
             aria-label="Mobile navigation"
           >
-            <div className="flex flex-col p-8 gap-6">
+            {/* Close button */}
+            <div className="flex justify-end p-5">
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="p-2 text-navy-700"
+                aria-label="Close menu"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            <div className="flex flex-col px-8 gap-6">
               {navLinks.map((link) =>
                 link.external ? (
                   <a
@@ -119,8 +84,66 @@ export default function Header() {
               )}
             </div>
           </nav>
+        </div>,
+        document.body
+      )
+    : null
+
+  return (
+    <>
+      <header
+        className={`sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b transition-all duration-300 ${
+          scrolled ? 'border-navy-100/60 shadow-sm' : 'border-transparent'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-18">
+          <Link to="/" className="flex items-center gap-3" aria-label="ITB-MED Home">
+            <img src="/logo.png" alt="ITB-MED logo" className="h-9" />
+          </Link>
+
+          {/* Desktop nav */}
+          <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-navy-600 hover:text-accent-600 transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`text-sm font-medium transition-colors duration-200 ${
+                    location.pathname === link.to
+                      ? 'text-accent-600'
+                      : 'text-navy-600 hover:text-accent-600'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+          </nav>
+
+          {/* Mobile hamburger */}
+          <button
+            className="lg:hidden p-2 -mr-2 text-navy-700"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileOpen}
+          >
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
-      )}
-    </header>
+      </header>
+
+      {/* Mobile nav rendered via portal to avoid sticky parent issues */}
+      {mobileNav}
+    </>
   )
 }

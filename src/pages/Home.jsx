@@ -30,7 +30,7 @@ export default function Home() {
           <div className="order-1 lg:order-2 flex items-center px-8 md:px-12 lg:pl-16 lg:pr-16 xl:pr-24 py-20 md:py-28">
             <div className="animate-blur-fade-in max-w-xl">
               <p className="text-accent-600 font-medium text-sm tracking-wider uppercase mb-4">Transforming Transplant Medicine</p>
-              <h1 className="font-serif text-5xl md:text-6xl lg:text-[72px] tracking-tight leading-[1] text-navy-900 mb-6">
+              <h1 className="font-serif text-[32px] sm:text-5xl md:text-6xl lg:text-[72px] tracking-tight leading-[1.05] text-navy-900 mb-6">
                 Immunosuppression freedom after transplantation
               </h1>
               <p className="text-lg text-navy-600 leading-relaxed mb-8">
