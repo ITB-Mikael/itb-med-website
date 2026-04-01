@@ -21,13 +21,13 @@ function BioModal({ name, title, photo, bio, onClose }) {
       aria-label={`Bio for ${name}`}
     >
       <div
-        className="absolute inset-0 bg-navy-950/60 backdrop-blur-sm animate-[fadeIn_0.2s_ease-out]"
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-[fadeIn_0.2s_ease-out]"
         onClick={onClose}
       />
-      <div className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto animate-[fadeUp_0.3s_ease-out]">
+      <div className="relative bg-dark-elevated border border-navy-700/30 rounded-2xl shadow-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto animate-[fadeUp_0.3s_ease-out]">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-navy-400 hover:text-navy-700 transition-colors z-10 cursor-pointer"
+          className="absolute top-4 right-4 p-2 text-navy-400 hover:text-white transition-colors z-10 cursor-pointer"
           aria-label="Close bio"
         >
           <X className="w-5 h-5" />
@@ -37,12 +37,12 @@ function BioModal({ name, title, photo, bio, onClose }) {
             <img
               src={photo}
               alt={`${name}, ${title} at ITB-MED`}
-              className="w-32 h-32 rounded-full object-cover mb-4 ring-4 ring-navy-50"
+              className="w-32 h-32 rounded-full object-cover mb-4 ring-4 ring-navy-800"
             />
-            <h3 className="font-serif text-2xl text-navy-900">{name}</h3>
-            <p className="text-accent-600 font-medium mt-1">{title}</p>
+            <h3 className="font-serif text-2xl text-white">{name}</h3>
+            <p className="text-accent-400 font-medium mt-1">{title}</p>
           </div>
-          <div className="text-navy-700 leading-relaxed space-y-4 text-base">
+          <div className="text-navy-300 leading-relaxed space-y-4 text-base">
             {bio.split('\n\n').map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
@@ -64,7 +64,7 @@ export default function TeamCard({ name, title, photo, bio }) {
         className={`group text-left w-full ${bio ? 'cursor-pointer' : 'cursor-default'}`}
         aria-label={bio ? `View bio for ${name}` : name}
       >
-        <div className="relative overflow-hidden rounded-xl aspect-[3/4] bg-navy-100 mb-4">
+        <div className="relative overflow-hidden rounded-xl aspect-[3/4] bg-navy-900 mb-4">
           <img
             src={photo}
             alt={`${name}, ${title} at ITB-MED`}
@@ -79,8 +79,8 @@ export default function TeamCard({ name, title, photo, bio }) {
             </div>
           )}
         </div>
-        <h3 className="font-serif text-lg text-navy-900">{name}</h3>
-        <p className="text-sm text-navy-500 mt-1 leading-relaxed">{title}</p>
+        <h3 className="font-serif text-lg text-white">{name}</h3>
+        <p className="text-sm text-navy-400 mt-1 leading-relaxed">{title}</p>
       </button>
 
       {showBio && (

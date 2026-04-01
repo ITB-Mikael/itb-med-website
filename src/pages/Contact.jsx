@@ -76,12 +76,12 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="p-8 rounded-2xl bg-amber-50 border border-amber-200/60">
+              <div className="p-8 rounded-2xl bg-amber-950/20 border border-amber-800/30">
                 <div className="flex items-center gap-3 mb-3">
-                  <AlertTriangle className="w-5 h-5 text-amber-600" />
-                  <h3 className="font-sans text-sm font-bold text-amber-800">Fraud Warning</h3>
+                  <AlertTriangle className="w-5 h-5 text-amber-400" />
+                  <h3 className="font-sans text-sm font-bold text-amber-300">Fraud Warning</h3>
                 </div>
-                <p className="text-sm text-amber-700 leading-relaxed">
+                <p className="text-sm text-amber-400/80 leading-relaxed">
                   ITB-MED does not recruit via text messages, Signal, WhatsApp, or other messaging platforms. All legitimate recruitment is conducted through official channels only.
                 </p>
               </div>
