@@ -129,7 +129,7 @@ export default function Home() {
               Five-year survival in cancer has surpassed dialysis patients<Ref id={6} />
             </blockquote>
             <p className="text-sm text-navy-400 mt-4 max-w-2xl mx-auto leading-relaxed">
-              Despite driving &gt;24% of Medicare spending, kidney disease receives only ~$3-5B in R&D<Ref id={7} /> — a fraction of what other therapeutic areas attract. CNI-based therapy remains nephrotoxic, damaging the very organ it's meant to protect.<Ref id={8} />
+              Despite driving &gt;24% of Medicare spending, kidney disease receives only ~$3-5B in R&D<Ref id={7} /> — a fraction of what other therapeutic areas attract.
             </p>
           </div>
         </ScrollFadeIn>
@@ -253,7 +253,6 @@ export default function Home() {
           'Scientific Registry of Transplant Recipients (SRTR). Annual report on transplant outcomes: graft and patient survival rates. [Year to be confirmed]',
           'American Cancer Society. Cancer Facts & Figures; compared with USRDS dialysis survival data. [Source/year to be confirmed]',
           'Cortellis Competitive Intelligence database. Global R&D spend by therapeutic area. [Source/year to be confirmed]',
-          'Naesens M, et al. Calcineurin inhibitor nephrotoxicity. Clin J Am Soc Nephrol. 2009;4(2):481-508. [Source to be confirmed by Medical Affairs]',
         ]} />
       </SectionWrapper>
 
