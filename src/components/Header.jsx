@@ -92,9 +92,12 @@ export default function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 backdrop-blur-sm border-b transition-all duration-300 ${
-          scrolled ? 'bg-dark-bg/90 border-navy-800/50 shadow-lg shadow-black/20' : 'bg-transparent border-transparent'
+        className={`sticky top-0 z-50 border-b transition-all duration-500 ${
+          scrolled
+            ? 'bg-navy-950/40 backdrop-blur-xl border-white/[0.06] shadow-[0_4px_30px_rgba(0,0,0,0.3)]'
+            : 'bg-transparent backdrop-blur-none border-transparent'
         }`}
+        style={scrolled ? { backdropFilter: 'blur(20px) saturate(1.4)' } : undefined}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-18">
           <Link to="/" className="flex items-center gap-3" aria-label="ITB-MED Home">
