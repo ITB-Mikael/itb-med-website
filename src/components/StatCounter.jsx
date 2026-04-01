@@ -9,6 +9,13 @@ export default function StatCounter({ end, suffix = '', label, duration = 2000 }
     const el = ref.current
     if (!el) return
 
+    // If already in viewport on mount, start immediately
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setHasStarted(true)
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasStarted) {
@@ -16,7 +23,7 @@ export default function StatCounter({ end, suffix = '', label, duration = 2000 }
           observer.unobserve(el)
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3, rootMargin: '50px' }
     )
 
     observer.observe(el)

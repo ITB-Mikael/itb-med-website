@@ -7,16 +7,27 @@ export default function ScrollFadeIn({ children, className = '', delay = 0 }) {
     const el = ref.current
     if (!el) return
 
+    const show = () => {
+      setTimeout(() => {
+        el.classList.add('scroll-visible')
+      }, delay)
+    }
+
+    // If already in viewport on mount, show immediately
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      show()
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            el.classList.add('scroll-visible')
-          }, delay)
+          show()
           observer.unobserve(el)
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1, rootMargin: '50px' }
     )
 
     observer.observe(el)
