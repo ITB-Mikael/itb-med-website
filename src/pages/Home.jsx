@@ -106,29 +106,9 @@ export default function Home() {
             <div className="mt-2 text-xs font-medium uppercase tracking-widest text-navy-400">On Transplant Waiting List<Ref id={4} /></div>
           </div></ScrollFadeIn>
         </div>
-        {/* Survival comparison */}
         <ScrollFadeIn delay={400}>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="text-center p-5 rounded-xl bg-red-950/30 border border-red-900/40">
-              <div className="font-serif text-2xl text-red-400">~40%</div>
-              <div className="text-xs font-medium text-red-400 mt-1">Dialysis 5-Year Survival<Ref id={2} /></div>
-            </div>
-            <div className="text-center p-5 rounded-xl bg-amber-950/30 border border-amber-900/40">
-              <div className="font-serif text-2xl text-amber-400">80%+</div>
-              <div className="text-xs font-medium text-amber-400 mt-1">Deceased Donor Transplant<Ref id={5} /></div>
-            </div>
-            <div className="text-center p-5 rounded-xl bg-green-950/30 border border-green-900/40">
-              <div className="font-serif text-2xl text-green-400">90%+</div>
-              <div className="text-xs font-medium text-green-400 mt-1">Living Donor Transplant<Ref id={5} /></div>
-            </div>
-          </div>
-        </ScrollFadeIn>
-        <ScrollFadeIn delay={500}>
           <div className="mt-8 text-center">
-            <blockquote className="font-serif text-lg italic text-navy-200 max-w-2xl mx-auto">
-              Five-year survival in cancer has surpassed dialysis patients<Ref id={6} />
-            </blockquote>
-            <p className="text-sm text-navy-400 mt-4 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm text-navy-400 max-w-2xl mx-auto leading-relaxed">
               Despite driving &gt;24% of Medicare spending, kidney disease receives only ~$3-5B in R&D<Ref id={7} /> — a fraction of what other therapeutic areas attract.
             </p>
           </div>
@@ -206,8 +186,8 @@ export default function Home() {
               <img src="/images/surgery.jpg" alt="Researchers analyzing transplant data" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-white font-serif text-lg">Transplantation</p>
-                <p className="text-navy-200 text-sm mt-1">Kidney induction & xenotransplantation</p>
+                <p className="text-white font-serif text-lg">Transplant</p>
+                <p className="text-navy-200 text-sm mt-1">Kidney induction, maintenance & conditioning</p>
               </div>
             </div>
           </ScrollFadeIn>
@@ -216,17 +196,17 @@ export default function Home() {
               <img src="/images/neurology.jpg" alt="Brain scan imaging for neurological research" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-white font-serif text-lg">Neurology</p>
+                <p className="text-white font-serif text-lg">Neuro-inflammatory</p>
                 <p className="text-navy-200 text-sm mt-1">ALS</p>
               </div>
             </div>
           </ScrollFadeIn>
           <ScrollFadeIn delay={200}>
             <div className="group relative rounded-2xl overflow-hidden aspect-[4/3]">
-              <img src="/images/inflammatory.jpg" alt="Biotech laboratory research for inflammatory conditions" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <img src="/images/inflammatory.jpg" alt="Biotech laboratory research for dermatology" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-white font-serif text-lg">Inflammatory</p>
+                <p className="text-white font-serif text-lg">Dermatology</p>
                 <p className="text-navy-200 text-sm mt-1">Hidradenitis suppurativa</p>
               </div>
             </div>
@@ -236,8 +216,8 @@ export default function Home() {
               <img src="/images/cells.jpg" alt="Microscopic view of immune cells" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-white font-serif text-lg">Autoimmunity</p>
-                <p className="text-navy-200 text-sm mt-1">Ceduprubart & belatacept</p>
+                <p className="text-white font-serif text-lg">Rheumatology</p>
+                <p className="text-navy-200 text-sm mt-1">Autoimmune conditions</p>
               </div>
             </div>
           </ScrollFadeIn>

@@ -2,6 +2,7 @@ export const pipelineData = [
   {
     asset: 'Siplizumab',
     subtitle: '',
+    category: 'Transplant & Immune-mediated Diseases',
     rows: [
       { indication: 'Kidney Induction Transplant', startCol: 0, endCol: 2, label: '' },
       { indication: 'ALS', startCol: 0, endCol: 2, label: '' },
@@ -12,22 +13,25 @@ export const pipelineData = [
   {
     asset: 'ITB100',
     subtitle: '(Belatacept)',
+    category: 'Transplant',
     rows: [
-      { indication: 'Transplant', startCol: 0, endCol: 0, label: '' },
+      { indication: 'Transplant', startCol: 0, endCol: 0, label: '', progress: 0.5 },
     ],
   },
   {
     asset: 'ITB200',
     subtitle: '(ceduprubart)',
+    category: 'Transplant & Immune-mediated Diseases',
     rows: [
-      { indication: 'Transplant & Autoimmune', startCol: 0, endCol: 0, label: '' },
+      { indication: 'Transplant & Autoimmune', startCol: 0, endCol: 0, label: '', progress: 0.5 },
     ],
   },
   {
     asset: 'ITB300',
     subtitle: '(anti-CD117)',
+    category: 'Transplant',
     rows: [
-      { indication: 'Transplant', startCol: 0, endCol: 0, label: '' },
+      { indication: 'Transplant', startCol: 0, endCol: 0, label: '', progress: 0.5 },
     ],
   },
 ]

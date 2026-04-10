@@ -71,7 +71,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-medium text-navy-200">New York</p>
-                <p className="text-navy-400">110 East 59th St FL 28, New York, NY 10022</p>
+                <p className="text-navy-400">110 East 59th Street, 28th Floor, New York, NY 10022</p>
               </div>
             </div>
           </div>

@@ -146,7 +146,7 @@ export default function About() {
                 <h3 className="font-serif text-xl text-white mb-2">New York</h3>
                 <p className="text-navy-400 text-sm leading-relaxed">
                   ITB-MED LLC<br />
-                  110 East 59th St FL 28<br />
+                  110 East 59th Street, 28th Floor<br />
                   New York, NY 10022
                 </p>
               </div>

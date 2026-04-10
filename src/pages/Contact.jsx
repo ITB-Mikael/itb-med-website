@@ -70,7 +70,7 @@ export default function Contact() {
                   <h3 className="font-serif text-lg text-white mb-2">New York</h3>
                   <address className="not-italic text-sm text-navy-300 leading-relaxed">
                     ITB-MED LLC<br />
-                    110 East 59th St FL 28<br />
+                    110 East 59th Street, 28th Floor<br />
                     New York, NY 10022
                   </address>
                 </div>
