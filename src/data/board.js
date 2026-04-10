@@ -29,4 +29,10 @@ export const boardMembers = [
     photo: '/board/shefali-agarwal.jpg',
     bio: 'Shefali Agarwal currently serves as President and CEO of Valerio Therapeutics. She previously held the Chief Medical Officer position at Epizyme, Inc., where she led development strategies for cancer therapy tazemetostat.\n\nHer professional journey includes significant roles at SQZ Biotech, Curis, and Tesaro, emphasizing clinical development and regulatory work in oncology. Earlier experience spans Covidien, AVEO Oncology, and Pfizer. Dr. Agarwal holds an M.D., Master\'s in Public Health, and Master\'s in Business Administration, combining medical and business expertise. She has been a board member of the Zelarion Group since 2020.',
   },
+  {
+    name: 'Alan Lotvin',
+    role: 'Director',
+    photo: '/board/alan-lotvin.jpg',
+    bio: 'Alan Lotvin, MD, is a physician-executive and trained cardiologist with extensive experience in healthcare leadership. He served as Executive Vice President of CVS Health and President of CVS Caremark, overseeing the pharmacy benefits management business including sales, operations, and specialty pharmacy.\n\nHe is currently CEO and Co-Founder of Sequel Med Tech, a diabetes device company. Prior to CVS Health, he held senior roles at ICORE Healthcare and Medco Health Solutions. Dr. Lotvin holds an MD from SUNY Health Sciences Center Brooklyn and a master\'s in Medical Informatics from Columbia University.',
+  },
 ]
