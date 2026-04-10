@@ -8,8 +8,8 @@ import ScrollFadeIn from '../components/ScrollFadeIn'
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'ITB-MED — Immunosuppression Freedom After Transplantation'
-    document.querySelector('meta[name="description"]')?.setAttribute('content', 'ITB-MED develops TCD601 (siplizumab) for transplantation and autoimmunity — pioneering immunosuppression-free outcomes for transplant patients.')
+    document.title = 'ITB-MED — Advancing Transplant Medicine and Targeted Immunology'
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'ITB-MED is developing therapies to transform induction, maintenance, and long-term outcomes for transplant patients and those living with immune-mediated diseases.')
   }, [])
 
   return (
@@ -28,12 +28,13 @@ export default function Home() {
           {/* Text — right column with padding */}
           <div className="order-1 lg:order-2 flex items-center px-8 md:px-12 lg:pl-16 lg:pr-16 xl:pr-24 py-20 md:py-28">
             <div className="animate-blur-fade-in max-w-xl">
+              {/* DRAFT — AWAITING LT APPROVAL */}
               <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Transforming Transplant Medicine</p>
               <h1 className="font-serif text-[32px] sm:text-5xl md:text-6xl lg:text-[72px] tracking-tight leading-[1.05] text-white mb-6">
-                Immunosuppression freedom after transplantation
+                Advancing the future of transplant medicine and targeted immunology
               </h1>
               <p className="text-lg text-navy-300 leading-relaxed mb-8">
-                ITB-MED is developing TCD601 (siplizumab), a monoclonal antibody targeting CD2, to achieve lasting immune tolerance in transplant recipients — eliminating the need for lifelong immunosuppressive drugs.
+                ITB-MED is developing therapies to transform induction, maintenance, and long-term outcomes for transplant patients and those living with immune-mediated diseases.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -56,7 +57,10 @@ export default function Home() {
       </section>
 
       {/* Disease Burden */}
+      {/* DRAFT — AWAITING LT APPROVAL */}
+      {/* COMPLIANCE: All rATG and CNI statistics must be verified against published peer-reviewed sources before launch */}
       <SectionWrapper bg="dark">
+        {/* 1. Burden of disease */}
         <div className="text-center mb-16">
           <ScrollFadeIn>
             <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">The Unmet Need</p>
@@ -64,7 +68,7 @@ export default function Home() {
               The burden of kidney disease
             </h2>
             <p className="text-navy-300 max-w-2xl mx-auto leading-relaxed">
-              End-stage renal disease affects hundreds of thousands of patients, yet transplant outcomes remain limited by the toxicity of lifelong immunosuppression.
+              End-stage renal disease affects hundreds of thousands of patients. For many, dialysis remains the only option — with five-year survival rates of approximately 40%.
             </p>
           </ScrollFadeIn>
         </div>
@@ -86,16 +90,38 @@ export default function Home() {
             <div className="mt-2 text-xs font-medium uppercase tracking-widest text-navy-400">On Transplant Waiting List<Ref id={4} /></div>
           </div></ScrollFadeIn>
         </div>
+        {/* 2. Promise of transplant */}
         <ScrollFadeIn delay={400}>
-          <div className="mt-8 text-center">
-            <p className="text-sm text-navy-400 max-w-2xl mx-auto leading-relaxed">
-              Despite driving &gt;24% of Medicare spending, kidney disease receives only ~$3-5B in R&D<Ref id={7} /> — a fraction of what other therapeutic areas attract.
+          <div className="mt-12 text-center max-w-3xl mx-auto">
+            <h3 className="font-serif text-2xl text-white mb-4">Transplant offers the best chance</h3>
+            <p className="text-navy-300 leading-relaxed">
+              Kidney transplantation dramatically improves survival and quality of life compared with dialysis. Yet the transplant experience itself remains constrained by significant limitations in current approaches to induction and maintenance therapy.
             </p>
+          </div>
+        </ScrollFadeIn>
+        {/* 3. Opportunity to improve */}
+        <ScrollFadeIn delay={500}>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="p-6 rounded-2xl bg-navy-900/50 border border-navy-700/30">
+              <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-navy-400 mb-3">Induction Therapy</h4>
+              {/* Source: Brennan DC, et al. Rabbit antithymocyte globulin versus basiliximab in renal transplantation. N Engl J Med. 2006;355(19):1967-1977 */}
+              <p className="text-navy-300 text-sm leading-relaxed">
+                Current induction protocols rely heavily on rabbit-derived polyclonal antibodies (rATG), which carry risks of over-immunosuppression, infection, and inconsistent batch potency.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-navy-900/50 border border-navy-700/30">
+              <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-navy-400 mb-3">Maintenance Therapy</h4>
+              {/* Source: Naesens M, et al. Calcineurin inhibitor nephrotoxicity. Clin J Am Soc Nephrol. 2009;4(2):481-508 */}
+              <p className="text-navy-300 text-sm leading-relaxed">
+                Calcineurin inhibitor (CNI)-based maintenance remains the standard of care, yet long-term CNI use is associated with progressive nephrotoxicity, cardiovascular risk, and metabolic complications.
+              </p>
+            </div>
           </div>
         </ScrollFadeIn>
       </SectionWrapper>
 
       {/* One Kidney for Life */}
+      {/* DRAFT — AWAITING LT APPROVAL */}
       <SectionWrapper bg="elevated">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <ScrollFadeIn>
@@ -105,7 +131,7 @@ export default function Home() {
                 One Kidney for Life
               </h2>
               <p className="text-navy-300 leading-relaxed mb-8">
-                ITB-MED's three-pillar strategy aims to transform kidney transplant outcomes — from improving induction therapy through achieving complete immunosuppression freedom.
+                ITB-MED is advancing a three-pillar strategy to transform the transplant experience — developing novel approaches to induction, maintenance, and long-term graft survival.
               </p>
               <img
                 src="/images/patient-care.jpg"
@@ -119,27 +145,27 @@ export default function Home() {
             <ScrollFadeIn delay={100}>
               <div className="p-6 rounded-2xl bg-dark-elevated border border-navy-700/30">
                 <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">01</span>
-                <h3 className="font-serif text-xl text-white mt-2 mb-2">Induction Therapy Improvements</h3>
+                <h3 className="font-serif text-xl text-white mt-2 mb-2">Modernizing Induction</h3>
                 <p className="text-navy-300 text-sm leading-relaxed">
-                  Establish siplizumab as a new standard of care for depleting induction therapy, improving on rabbit-derived polyclonal ATG.
+                  Developing a next-generation induction therapy designed to selectively target pathogenic immune cells while preserving protective populations.
                 </p>
               </div>
             </ScrollFadeIn>
             <ScrollFadeIn delay={200}>
               <div className="p-6 rounded-2xl bg-dark-elevated border border-navy-700/30">
                 <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">02</span>
-                <h3 className="font-serif text-xl text-white mt-2 mb-2">Maintenance Therapy Improvements</h3>
+                <h3 className="font-serif text-xl text-white mt-2 mb-2">Improving Maintenance</h3>
                 <p className="text-navy-300 text-sm leading-relaxed">
-                  Achieve a highly effective CNI-free regimen combining siplizumab or ceduprubart (ITB200) with belatacept (ITB100).
+                  Evaluating combination regimens aimed at reducing the long-term burden of maintenance immunosuppression while maintaining graft function.
                 </p>
               </div>
             </ScrollFadeIn>
             <ScrollFadeIn delay={300}>
               <div className="p-6 rounded-2xl bg-dark-elevated border border-navy-700/30">
                 <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">03</span>
-                <h3 className="font-serif text-xl text-white mt-2 mb-2">Tolerance-Mediated Freedom</h3>
+                <h3 className="font-serif text-xl text-white mt-2 mb-2">Working Towards Tolerance</h3>
                 <p className="text-navy-300 text-sm leading-relaxed">
-                  Develop a siplizumab-based regimen to induce durable tolerance, eliminating the need for chronic immunosuppressive therapy entirely.
+                  Pursuing the ultimate goal in transplantation — durable immune tolerance that could free patients from chronic immunosuppressive therapy entirely.
                 </p>
               </div>
             </ScrollFadeIn>

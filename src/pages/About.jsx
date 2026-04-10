@@ -24,12 +24,17 @@ export default function About() {
       <section className="bg-dark-bg overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-blur-fade-in">
+            {/* DRAFT — AWAITING LT APPROVAL */}
+            {/* COMPLIANCE: "First-in-class" claim needs verification — do not publish without legal review */}
             <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">About ITB-MED</p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-white mb-6">
-              Redefining transplant medicine through targeted immunology
+              Advancing transplant medicine through targeted immunology
             </h1>
+            <p className="text-lg text-navy-300 leading-relaxed mb-4">
+              Transplant patients today face significant limitations — from the risks of current induction protocols to the long-term burden of maintenance immunosuppression. ITB-MED is developing new therapeutics designed to meaningfully improve each stage of the transplant journey: induction, maintenance, conditioning, and the pursuit of tolerance.
+            </p>
             <p className="text-lg text-navy-300 leading-relaxed">
-              ITB-MED is a biopharmaceutical company developing TCD601 (siplizumab) — a first-in-class anti-CD2 monoclonal antibody — for transplantation and autoimmune diseases. Through worldwide clinical trials and preclinical research, we are working to achieve a future where transplant recipients can live free of immunosuppression.
+              Our pipeline includes siplizumab, an investigational anti-CD2 monoclonal antibody being evaluated as a modernized induction agent; multiple assets for monotherapy or combination approaches to improve long-term maintenance; novel conditioning options for bone marrow transplantation; and regimens aimed at establishing durable immune tolerance. Beyond transplantation, ITB-MED is also exploring its platform in immune-mediated diseases.
             </p>
           </div>
           <div className="hidden lg:block">
@@ -58,15 +63,13 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <ScrollFadeIn>
             <div>
+              {/* DRAFT — AWAITING LT APPROVAL */}
               <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Strategic Partnership</p>
               <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white mb-6">
                 ITB-MED & Nefro Avillion
               </h2>
-              <p className="text-navy-300 leading-relaxed mb-4">
-                ITB-MED serves as the drug sponsor and biotech company advancing TCD601 across multiple therapeutic areas. Nefro Avillion Clinical Development (NACD), established in 2025, is a sister company that executes the kidney transplant tolerance clinical program.
-              </p>
               <p className="text-navy-300 leading-relaxed">
-                This partnership model enables focused execution: ITB-MED maintains oversight of the broader TCD601 program across transplant, autoimmunity, and neurology, while NACD drives the kidney tolerance trials to pivotal readiness.
+                ITB-MED partners with Nefro Avillion Clinical Development (NACD) as its strategic clinical development partner, supporting the design and execution of ITB-MED's clinical programs.
               </p>
             </div>
           </ScrollFadeIn>
@@ -77,14 +80,14 @@ export default function About() {
                   <Building2 className="w-6 h-6 text-accent-400" />
                 </div>
                 <h3 className="font-serif text-xl text-white mb-2">ITB-MED</h3>
-                <p className="text-navy-300 text-sm leading-relaxed">Drug sponsor driving TCD601 development across transplantation, autoimmunity, and neurology.</p>
+                <p className="text-navy-300 text-sm leading-relaxed">Biopharmaceutical company advancing a multi-asset pipeline in transplantation and immune-mediated diseases.</p>
               </div>
               <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30">
                 <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
                   <Globe className="w-6 h-6 text-accent-400" />
                 </div>
                 <h3 className="font-serif text-xl text-white mb-2">Nefro Avillion</h3>
-                <p className="text-navy-300 text-sm leading-relaxed">Clinical development partner executing the kidney transplant tolerance program.</p>
+                <p className="text-navy-300 text-sm leading-relaxed">Strategic clinical development partner supporting ITB-MED's clinical programs.</p>
               </div>
             </div>
           </ScrollFadeIn>
