@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Pill, Brain, Syringe, FlaskConical } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import SectionWrapper from '../components/SectionWrapper'
 import ScrollFadeIn from '../components/ScrollFadeIn'
 import PipelineTable from '../components/PipelineTable'
@@ -55,34 +55,34 @@ export default function Pipeline() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ScrollFadeIn>
             <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 h-full">
-              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">LEAD ASSET</span>
+              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">TRANSPLANT & IMMUNE-MEDIATED DISEASES</span>
               <h3 className="font-serif text-2xl text-white mt-2 mb-3">Siplizumab</h3>
               <p className="text-navy-300 text-sm leading-relaxed">
-                Humanized anti-CD2 IgG1 monoclonal antibody. The most advanced asset in our pipeline, with programs across kidney transplant induction, ALS, hidradenitis suppurativa, and xenotransplantation.
+                Humanized anti-CD2 IgG1 monoclonal antibody with programs across kidney transplant induction, ALS, hidradenitis suppurativa, and xenotransplantation.
               </p>
             </div>
           </ScrollFadeIn>
           <ScrollFadeIn delay={100}>
             <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 h-full">
-              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">MAINTENANCE</span>
-              <h3 className="font-serif text-2xl text-white mt-2 mb-3">ITB100 (Belatacept)</h3>
+              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">TRANSPLANT & IMMUNE-MEDIATED DISEASES</span>
+              <h3 className="font-serif text-2xl text-white mt-2 mb-3">ITB200 (ceduprubart)</h3>
               <p className="text-navy-300 text-sm leading-relaxed">
-                CTLA4-Ig that blocks co-stimulation via the CD80/CD86-CD28 pathway. Being evaluated for a CNI-free maintenance regimen in combination with siplizumab or ceduprubart.
+                Humanized anti-CD2 IgG4 monoclonal antibody. Provides co-stimulation blockade and Treg enrichment without memory T-cell depletion — designed for maintenance therapy and autoimmune conditions.
               </p>
             </div>
           </ScrollFadeIn>
           <ScrollFadeIn delay={200}>
             <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 h-full">
-              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">ANTI-CD2 IgG4</span>
-              <h3 className="font-serif text-2xl text-white mt-2 mb-3">ITB200 (ceduprubart)</h3>
+              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">TRANSPLANT</span>
+              <h3 className="font-serif text-2xl text-white mt-2 mb-3">ITB100 (Belatacept)</h3>
               <p className="text-navy-300 text-sm leading-relaxed">
-                Humanized anti-CD2 IgG4 monoclonal antibody. Unlike siplizumab, ceduprubart provides co-stimulation blockade and Treg enrichment without memory T-cell depletion — designed for maintenance therapy and autoimmune conditions.
+                CTLA4-Ig that blocks co-stimulation via the CD80/CD86-CD28 pathway. Being evaluated for combination regimens aimed at improving long-term transplant maintenance.
               </p>
             </div>
           </ScrollFadeIn>
           <ScrollFadeIn delay={300}>
             <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 h-full">
-              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">CONDITIONING</span>
+              <span className="text-accent-500 font-sans text-sm font-bold tracking-wider">TRANSPLANT</span>
               <h3 className="font-serif text-2xl text-white mt-2 mb-3">ITB300 (anti-CD117)</h3>
               <p className="text-navy-300 text-sm leading-relaxed">
                 Novel target for transplant conditioning, currently in preclinical development. Part of ITB-MED's broader strategy to build a comprehensive transplant medicine platform.
