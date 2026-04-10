@@ -4,7 +4,15 @@ const events = [
   { year: 'Origins', text: 'Siplizumab (MEDI-507) initially developed by MedImmune, with decades of clinical research in transplantation and autoimmunity.' },
   { year: '2016', text: 'ITB-MED founded to advance TCD601 (siplizumab) through clinical development in transplantation and autoimmune diseases.' },
   { year: '2018', text: '$67 million raised to fund the comprehensive clinical program across multiple transplant and autoimmune indications.' },
-  { year: '2025', text: 'Nefro Avillion Clinical Development established as sister company to execute the kidney transplant tolerance program.' },
+  /* PLACEHOLDER — CONFIRM DETAILS */
+  { year: 'TBD' /* CONFIRM YEAR */, text: 'ITB100 (Belatacept) added to pipeline — expanding transplant maintenance strategy.' },
+  /* PLACEHOLDER — CONFIRM DETAILS */
+  { year: 'TBD' /* CONFIRM YEAR */, text: 'ITB200 (Ceduprubart) added to pipeline — anti-CD2 IgG4 for maintenance and autoimmune indications.' },
+  /* PLACEHOLDER — CONFIRM DETAILS */
+  { year: 'TBD' /* CONFIRM YEAR */, text: 'ITB300 (anti-CD117) added to pipeline — novel conditioning agent for transplantation.' },
+  /* PLACEHOLDER — CONFIRM WHICH STUDIES AND YEARS */
+  { year: 'TBD' /* CONFIRM YEAR */, text: 'Key clinical studies initiated across transplant induction and immune-mediated disease programs.' },
+  { year: '2025', text: 'Nefro Avillion Clinical Development established as strategic clinical development partner.' },
 ]
 
 export default function Timeline() {
