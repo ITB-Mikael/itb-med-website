@@ -214,21 +214,6 @@ export default function Science() {
         </div>
       </SectionWrapper>
 
-      {/* Clinical Heritage */}
-      <SectionWrapper bg="dark">
-        <ScrollFadeIn>
-          <div className="text-center max-w-3xl mx-auto">
-            <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Clinical Heritage</p>
-            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white mb-6">
-              600+ Patients Across Multiple Indications
-            </h2>
-            <p className="text-navy-300 leading-relaxed">
-              Siplizumab has been studied in more than 600 patients across clinical programs in psoriasis, transplantation, graft-versus-host disease, and lymphoproliferative disorders. This extensive clinical experience informs and de-risks ITB-MED's current development program.
-            </p>
-          </div>
-        </ScrollFadeIn>
-      </SectionWrapper>
-
       {/* References */}
       <SectionWrapper bg="white">
         <References items={[

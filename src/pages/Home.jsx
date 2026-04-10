@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 import { Ref, References } from '../components/RefNote'
 import SectionWrapper from '../components/SectionWrapper'
 import ScrollFadeIn from '../components/ScrollFadeIn'
-import StatCounter from '../components/StatCounter'
+
 
 export default function Home() {
   useEffect(() => {
@@ -54,26 +54,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Stats */}
-      <SectionWrapper bg="dark">
-        <ScrollFadeIn>
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white mb-4">
-              Clinical Heritage
-            </h2>
-            <p className="text-navy-300 max-w-2xl mx-auto leading-relaxed">
-              Decades of research and clinical experience form the foundation of our program.
-            </p>
-          </div>
-        </ScrollFadeIn>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          <StatCounter end={7} suffix="+" label="Active Trials" />
-          <StatCounter end={4} label="Therapeutic Areas" duration={1500} />
-          <StatCounter end={20} suffix="+" label="Years of Research" duration={2500} />
-          <StatCounter end={600} suffix="+" label="Patients Studied" duration={3000} />
-        </div>
-      </SectionWrapper>
 
       {/* Disease Burden */}
       <SectionWrapper bg="dark">
