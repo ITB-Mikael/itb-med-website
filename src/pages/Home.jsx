@@ -30,7 +30,7 @@ export default function Home() {
             <div className="animate-blur-fade-in max-w-xl">
               {/* DRAFT — AWAITING LT APPROVAL */}
               <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Transforming Transplant Medicine</p>
-              <h1 className="font-serif text-[32px] sm:text-5xl md:text-6xl lg:text-[72px] tracking-tight leading-[1.05] text-white mb-6">
+              <h1 className="font-serif text-[28px] sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight leading-[1.08] text-white mb-6">
                 Advancing the future of transplant medicine and targeted immunology
               </h1>
               <p className="text-lg text-navy-300 leading-relaxed mb-8">
