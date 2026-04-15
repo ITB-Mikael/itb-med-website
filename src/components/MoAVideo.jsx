@@ -10,6 +10,7 @@ export default function MoAVideo() {
             <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white">
               Watch: How Siplizumab (TCD601) Works
             </h2>
+            <p className="text-navy-400 text-sm mt-3">Placeholder video — final version pending</p>
           </div>
         </ScrollFadeIn>
         <ScrollFadeIn delay={200}>
