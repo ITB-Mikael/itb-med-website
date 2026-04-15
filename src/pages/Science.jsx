@@ -37,7 +37,7 @@ export default function Science() {
               CD2 Targeting — The Power of Immune Rebalancing
             </h1>
             <p className="text-lg text-navy-300 leading-relaxed">
-              ITB-MED is developing two anti-CD2 monoclonal antibodies — siplizumab (IgG1) and ceduprubart (IgG4) — with complementary mechanisms of action. Together with additional pipeline assets, they form a comprehensive platform for transplantation and autoimmune diseases.
+              ITB-MED is developing two anti-CD2 monoclonal antibodies — siplizumab (TCD601, IgG1) and ceduprubart (IgG4) — with complementary mechanisms of action. Together with additional pipeline assets, they form a comprehensive platform for transplantation and autoimmune diseases.
             </p>
           </div>
           {/* Antibody / receptor illustration */}

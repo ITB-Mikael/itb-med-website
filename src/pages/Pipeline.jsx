@@ -29,7 +29,7 @@ export default function Pipeline() {
               Focused pipeline with significant opportunities
             </h1>
             <p className="text-lg text-navy-300 leading-relaxed">
-              ITB-MED is advancing a multi-asset pipeline anchored by siplizumab, with additional programs targeting transplantation and autoimmune conditions through complementary mechanisms of action.
+              ITB-MED is advancing a multi-asset pipeline anchored by siplizumab (TCD601), with additional programs targeting transplantation and autoimmune conditions through complementary mechanisms of action.
             </p>
           </div>
           <div className="hidden lg:block">

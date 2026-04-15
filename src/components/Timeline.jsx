@@ -1,7 +1,7 @@
 import ScrollFadeIn from './ScrollFadeIn'
 
 const events = [
-  { year: 'Origins', text: 'Siplizumab (MEDI-507) initially developed by MedImmune, with decades of clinical research in transplantation and autoimmunity.' },
+  { year: 'Origins', text: 'Siplizumab (MEDI-507) originally developed by MedImmune, with a history of clinical investigation in transplantation.' },
   { year: '2016', text: 'ITB-MED founded to advance TCD601 (siplizumab) through clinical development in transplantation and autoimmune diseases.' },
   { year: '2018', text: '$67 million raised to fund the comprehensive clinical program across multiple transplant and autoimmune indications.' },
   /* PLACEHOLDER — CONFIRM DETAILS */

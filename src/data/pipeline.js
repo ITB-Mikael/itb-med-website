@@ -4,9 +4,9 @@ export const pipelineData = [
     subtitle: '',
     category: 'Transplant & Immune-mediated Diseases',
     rows: [
-      { indication: 'Kidney Induction Transplant', startCol: 0, endCol: 2, label: '' },
-      { indication: 'ALS', startCol: 0, endCol: 2, label: '' },
-      { indication: 'Hidradenitis Suppurativa¹', startCol: 0, endCol: 1, label: '' },
+      { indication: 'Kidney Induction Transplant', startCol: 0, endCol: 3, label: '' },
+      { indication: 'ALS', startCol: 0, endCol: 2, label: '', progress: 0.5 },
+      { indication: 'Hidradenitis Suppurativa¹', startCol: 0, endCol: 1, label: '', progress: 0.5 },
       { indication: 'Xenotransplantation²', startCol: 0, endCol: 0, label: 'Decedent' },
     ],
   },

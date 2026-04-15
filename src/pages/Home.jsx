@@ -182,7 +182,7 @@ export default function Home() {
               A multi-asset approach to transplant medicine
             </h2>
             <p className="text-navy-300 leading-relaxed max-w-2xl mx-auto">
-              Siplizumab, ceduprubart, belatacept, and anti-CD117 — four assets with complementary mechanisms targeting induction, maintenance, conditioning, and tolerance.
+              Siplizumab (TCD601), ceduprubart, belatacept, and anti-CD117 — four assets with complementary mechanisms targeting induction, maintenance, conditioning, and tolerance.
             </p>
           </div>
         </ScrollFadeIn>
@@ -252,32 +252,6 @@ export default function Home() {
         ]} />
       </SectionWrapper>
 
-      {/* CTA */}
-      <section className="relative bg-gradient-to-br from-navy-900 via-navy-950 to-navy-900 py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-10" aria-hidden="true">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-accent-400 blur-[120px]" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-accent-300 blur-[100px]" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 lg:px-16 text-center">
-          <ScrollFadeIn>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-tight text-white mb-6">
-              Help us make a real difference
-            </h2>
-            <p className="text-navy-300 max-w-xl mx-auto leading-relaxed mb-10">
-              Join our team and contribute to developing therapies that can transform the lives of transplant patients worldwide.
-            </p>
-            <a
-              href="https://careers.itb-med.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-3.5 rounded-lg transition-colors duration-300"
-            >
-              Explore Careers
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </ScrollFadeIn>
-        </div>
-      </section>
     </>
   )
 }

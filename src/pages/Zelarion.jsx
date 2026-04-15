@@ -29,7 +29,7 @@ export default function Zelarion() {
               The parent organization behind ITB-MED
             </h1>
             <p className="text-lg text-navy-300 leading-relaxed">
-              Zelarion Group is the owner of TCD601 (siplizumab) and ITB-MED. The group is dedicated to developing TCD601 for transplantation and autoimmune diseases, with Orphan Drug Designation granted in both the United States and the European Union.
+              Zelarion Group is the owner of siplizumab (TCD601) and ITB-MED. The group is dedicated to developing siplizumab for transplantation and autoimmune diseases, with Orphan Drug Designation granted in both the United States and the European Union.
             </p>
           </div>
           <div className="hidden lg:block">
@@ -49,7 +49,7 @@ export default function Zelarion() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 text-center">
               <h3 className="font-serif text-xl text-white mb-2">TCD601 Owner</h3>
-              <p className="text-navy-400 text-sm leading-relaxed">Zelarion holds worldwide rights to TCD601 (siplizumab)</p>
+              <p className="text-navy-400 text-sm leading-relaxed">Zelarion holds worldwide rights to siplizumab (TCD601)</p>
             </div>
             <div className="p-8 rounded-2xl bg-navy-900/50 border border-navy-700/30 text-center">
               <h3 className="font-serif text-xl text-white mb-2">Orphan Drug (US)</h3>
@@ -68,9 +68,12 @@ export default function Zelarion() {
         <div className="text-center mb-16">
           <ScrollFadeIn>
             <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Leadership</p>
-            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white">
+            <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white mb-6">
               Board of Directors
             </h2>
+            <p className="text-navy-300 max-w-3xl mx-auto leading-relaxed">
+              The Board of Directors brings deep, cross-functional expertise spanning biopharmaceutical development, strategic business development, investment leadership, and translational research, providing strong governance and strategic oversight to support ITB-MED's growth and long-term value creation.
+            </p>
           </ScrollFadeIn>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10">

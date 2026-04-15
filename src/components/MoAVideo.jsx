@@ -8,7 +8,7 @@ export default function MoAVideo() {
           <div className="text-center mb-12">
             <p className="text-accent-400 font-medium text-sm tracking-wider uppercase mb-4">Video</p>
             <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-white">
-              Watch: How TCD601 Works
+              Watch: How Siplizumab (TCD601) Works
             </h2>
           </div>
         </ScrollFadeIn>

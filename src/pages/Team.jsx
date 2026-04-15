@@ -8,11 +8,11 @@ export default function Team() {
   useEffect(() => {
     document.title = 'Team — ITB-MED'
     const meta = document.querySelector('meta[name="description"]')
-    if (meta) meta.setAttribute('content', 'Meet the ITB-MED team — scientists, physicians, and professionals driving the development of TCD601 for transplantation and autoimmunity.')
+    if (meta) meta.setAttribute('content', 'Meet the ITB-MED team — scientists, physicians, and professionals driving the development of siplizumab (TCD601) for transplantation and autoimmunity.')
     else {
       const m = document.createElement('meta')
       m.name = 'description'
-      m.content = 'Meet the ITB-MED team — scientists, physicians, and professionals driving the development of TCD601 for transplantation and autoimmunity.'
+      m.content = 'Meet the ITB-MED team — scientists, physicians, and professionals driving the development of siplizumab (TCD601) for transplantation and autoimmunity.'
       document.head.appendChild(m)
     }
   }, [])
@@ -28,7 +28,7 @@ export default function Team() {
               The people behind the science
             </h1>
             <p className="text-lg text-navy-300 leading-relaxed">
-              A dedicated team of scientists, clinicians, and industry professionals working across Stockholm and New York to advance TCD601 through clinical development.
+              A dedicated team of scientists, clinicians, and industry professionals working across Stockholm and New York to advance siplizumab (TCD601) through clinical development.
             </p>
           </div>
         </div>

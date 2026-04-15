@@ -31,10 +31,10 @@ export default function About() {
               Advancing transplant medicine through targeted immunology
             </h1>
             <p className="text-lg text-navy-300 leading-relaxed mb-4">
-              Transplant patients today face significant limitations — from the risks of current induction protocols to the long-term burden of maintenance immunosuppression. ITB-MED is developing new therapeutics designed to meaningfully improve each stage of the transplant journey: induction, maintenance, conditioning, and the pursuit of tolerance.
+              Transplant patients today face significant limitations — from the risks of current induction protocols to the long-term burden of maintenance immunosuppression. Founded in 2016, ITB-MED is developing new therapeutics designed to meaningfully improve each stage of the transplant journey: induction, maintenance, conditioning, and the pursuit of tolerance.
             </p>
             <p className="text-lg text-navy-300 leading-relaxed">
-              Our pipeline includes siplizumab, an investigational anti-CD2 monoclonal antibody being evaluated as a modernized induction agent; multiple assets for monotherapy or combination approaches to improve long-term maintenance; novel conditioning options for bone marrow transplantation; and regimens aimed at establishing durable immune tolerance. Beyond transplantation, ITB-MED is also exploring its platform in immune-mediated diseases.
+              Our pipeline includes siplizumab (TCD601), an investigational anti-CD2 monoclonal antibody being evaluated as a modernized induction agent; multiple assets for monotherapy or combination approaches to improve long-term maintenance; novel conditioning options for bone marrow transplantation; and regimens aimed at establishing durable immune tolerance. Beyond transplantation, ITB-MED is also exploring its platform in immune-mediated diseases.
             </p>
           </div>
           <div className="hidden lg:block">
@@ -166,7 +166,7 @@ export default function About() {
               Discover our science
             </h2>
             <p className="text-navy-300 max-w-xl mx-auto leading-relaxed mb-8">
-              Learn how TCD601 works to achieve immune tolerance through targeted CD2 modulation.
+              Learn how siplizumab works to achieve immune tolerance through targeted CD2 modulation.
             </p>
             <Link
               to="/science"
